@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ffffff;
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+}
+.my_conatiner {
+  @apply sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto;
+}
+.text_shadowes {
+  text-shadow: 6px 2px 6px #331a15;
+}
