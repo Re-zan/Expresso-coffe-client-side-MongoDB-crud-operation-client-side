@@ -16,19 +16,26 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:3000/coffes"),
+        loader: () =>
+          fetch("https://coffee-house-server-re-zan.vercel.app/coffes"),
       },
     ],
   },
   {
     path: "/coffes/:id",
     element: <CoffeSingle></CoffeSingle>,
-    loader: ({ params }) => fetch(`http://localhost:3000/coffes/${params.id}`),
+    loader: ({ params }) =>
+      fetch(
+        `https://coffee-house-server-re-zan.vercel.app/coffes/${params.id}`
+      ),
   },
   {
     path: "/coffesUpdate/:id",
     element: <CoffeUpdate></CoffeUpdate>,
-    loader: ({ params }) => fetch(`http://localhost:3000/coffes/${params.id}`),
+    loader: ({ params }) =>
+      fetch(
+        `https://coffee-house-server-re-zan.vercel.app/coffes/${params.id}`
+      ),
   },
   {
     path: "addCoffes",

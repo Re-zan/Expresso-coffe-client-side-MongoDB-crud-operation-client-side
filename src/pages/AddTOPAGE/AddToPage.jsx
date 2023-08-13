@@ -27,7 +27,7 @@ const AddToPage = () => {
       details,
       photo,
     };
-    fetch("http://localhost:3000/addCoffes", {
+    fetch("https://coffee-house-server-re-zan.vercel.app/addCoffes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
